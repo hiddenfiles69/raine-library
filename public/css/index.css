@@ -1,0 +1,352 @@
+.row .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styles applied when the mouse hovers over the card */
+.row .card:hover {
+    transform: translateY(-5px); /* Moves the card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+
+.container {
+    margin: 0 ;
+    padding: 0;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+  
+}
+
+.headings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headings h1 {
+    margin: 0;
+    padding: 0;
+    flex: 1; /* This pushes the row to the far right */
+}
+
+.headings-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.add-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #1C2A39;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #3A4D65;
+}
+
+#search-form {
+    display: flex;
+    gap: 5px;
+}
+
+#search-form input[type="text"] {
+    flex: 1;
+    padding: 10px 10px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#search-form button {
+    background-color: #1C2A39;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 12px;
+}
+
+#search-form button:hover {
+    background-color: #3A4D65;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+ 
+}
+
+table thead {
+  background-color: #e6f7ff;
+  color: #333; 
+  font-weight: bold;
+  
+}
+
+table thead tr {
+  border-bottom: 2px solid black; /* You can adjust the color and thickness */
+}
+
+table th, table td {
+    padding: 25px 25px;
+    text-align: center; /* Center align all table text */
+    border: none;
+    font-size: 18px; /* Slightly bigger for all cells */
+}
+
+table thead th {
+    font-size: 18px; /* Make table head bigger */
+    font-weight: bold;
+}
+
+.action-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-btn {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    color: #3A4D65;
+}
+
+.delete-btn {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.delete-btn:hover {
+    color: #b40000;
+}
+
+/*ADD NEW THINGS STYLE */
+.create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+
+.create-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    gap: 10px;
+    align-items: center;
+}
+
+.create-form .form-group {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border: 1px solid #1C2A39;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.form-group input:focus, 
+.form-group input:active {
+    outline: none;
+    border-color: #3A4D65;
+    box-shadow: 0 0 0 2px #e6f7ff;
+    background-color: #f5faff;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1C2A39;
+    font-size: 16px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.create-btn {
+    display: inline-block;
+    padding: 14px 100px;
+    text-decoration: none;
+    color: white;
+    background-color: #1C2A39;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+    background-color: #3A4D65;
+}
+
+.cancel-btn {
+    display: inline-block;
+    padding: 14px 100px;
+    text-decoration: none;
+    color: black;
+    background-color: #D7D7D7;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #B0B0B0;
+}
+
+.update-btn {
+    display: inline-block;
+    padding: 14px 100px;
+    text-decoration: none;
+    color: white;
+    background-color: #1C2A39;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #3A4D65;
+}
+
+/* ADDED STYLES FOR SELECT */
+.form-group select {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border: 1px solid #1C2A39;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+.form-group select:focus, 
+.form-group select:active {
+    outline: none;
+    border-color: #3A4D65;
+    box-shadow: 0 0 0 2px #e6f7ff;
+    background-color: #f5faff;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+/* Updated Form Styles */
+.create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+.create-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    gap: 10px;
+    align-items: flex-start; /* Aligns items to the left */
+}
+
+.create-form .form-group {
+    width: 100%;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border: 1px solid #1C2A39;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.form-group input:focus, 
+.form-group input:active {
+    outline: none;
+    border-color: #3A4D65;
+    box-shadow: 0 0 0 2px #e6f7ff;
+    background-color: #f5faff;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1C2A39;
+    font-size: 16px;
+}
+
+/* NEW STYLES FOR CHECKBOX ALIGNMENT */
+.form-check-inline {
+    width: 100%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between checkbox and label */
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-container .checkbox-label {
+    margin: 0; /* Remove default margin from label */
+    font-size: 16px; /* Match other labels */
+}
+
+.pagination .page-item .page-link {
+    color: #495057; /* Default link color */
+}
+
+/* Style for the active pagination link (the current page) */
+.pagination .page-item.active .page-link {
+    background-color: #2c3e50; /* A dark color to match your theme */
+    border-color: #2c3e50;
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Style for the hover state of pagination links */
+.pagination .page-item .page-link:hover {
+    color: #2c3e50; /* Darker color on hover */
+}
